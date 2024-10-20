@@ -1,0 +1,63 @@
+*{
+    font-family: "work sans";
+    list-style: none;
+    text-decoration: none;
+}
+/* shared style */
+
+.btn{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #FF900E;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* header related style */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #ff8f0e2b;
+    padding: 0 0 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 500px;
+
+}
+nav>ul{
+    display: flex;
+}
+nav li{
+    padding: 10px;
+}
+nav a{
+    color:  black;
+    font-size: 20px;
+}
+nav h1{
+    font-size: 2rem;
+}
+
+.herotext{
+    width: 862px;
+    margin:  auto;
+    text-align: center;
+}
+.herotext h2{
+    font-size: 60px;
+}
+.herotext p{
+    opacity: .7;
+}
+.button{
+    text-align: center;
+}
+
