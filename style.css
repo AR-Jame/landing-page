@@ -3,6 +3,12 @@
     list-style: none;
     text-decoration: none;
 }
+img{
+    width: 100%;
+}
+p{
+    opacity: .6;
+}
 /* shared style */
 
 .btn{
@@ -48,16 +54,193 @@ nav h1{
 
 .herotext{
     width: 862px;
-    margin:  auto;
+    margin: 0 auto;
     text-align: center;
 }
 .herotext h2{
-    font-size: 60px;
-}
-.herotext p{
-    opacity: .7;
+    font-size: 3.25rem;
 }
 .button{
     text-align: center;
+    margin: 50px 0;
+}
+.bannerimg{
+    margin:  0 auto;
+    width: 80%;
+}
+.bannerimg img{
+    width: 100%;
 }
 
+/* header style end */
+
+ main{
+    margin: 0 10%;
+ }
+
+/* feature  section start*/
+.feature{
+    margin: 80px 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.feature>div{
+    flex: 1;
+}
+.feature-left{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:flex-start;
+    gap: 15px;
+}
+.feature-right h3{
+    font-size: 45px;
+}
+.quick{
+    opacity: .6;
+    font-weight: 500;
+}
+.clrcng{
+    color: #FF900E;
+}
+
+/* content section start */
+.content{
+    display: flex;
+    gap: 80px;
+    align-items:start;
+
+}
+.content > div{
+    flex: 1;
+}
+.content h3{
+    font-size: 45px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.content-card{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 8px 0;
+}
+.content-card h5{
+    font-size: 22px;
+    margin: 20px 0;
+}
+.content-card p{
+    margin-top: -8px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.content-section{
+    position: relative;
+    margin: 50px auto;
+}
+.bigbox{
+    background-color: #FF900E;
+    color: white;
+    padding: 50px;
+    border-radius: 8px;
+    display: inline-block;
+    position: absolute;
+    bottom: -20px;
+    left: 48%;
+
+}
+
+.fp{
+    font-size: 4.5rem;
+    margin: 5px 0;
+    font-weight: 600;
+    opacity: 1;
+}
+.sp{
+    font-size: 2rem;
+    margin: 5px 0;
+    opacity: 1;
+    text-align: center;
+}
+
+/* Fact section start  */
+
+.facts{
+    margin: 80px 0;
+}
+.facts h3{
+    font-size: 2.1rem;
+}
+
+
+.factbox{
+    width: 200px;
+    border: 2px solid #FF900E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 8px;
+}
+.factbox img{
+    width: 80px;
+}
+.num{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 10px 0;
+    opacity: 1;
+}
+.facttext{
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.factboxes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/* responsiveness style */
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .herotext, .feature-left{
+        width: 90%;
+    }
+    main{
+        grid-template-columns: 2% auto 5%;
+    }
+    nav, .feature{
+        gap: 0;
+        flex-direction: column;
+    }
+    .bannerimg{
+        width: 90%;
+    }
+    ul{
+        padding: 0;
+    }
+    .bigbox{
+        width: 90%;
+        position: static;
+        padding: 20px;
+        margin-top: -80px;
+    }
+    .content-card{
+        width: 90%;
+        margin: 30px 0;
+
+    }
+    .content, .factboxes{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}
