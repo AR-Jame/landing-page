@@ -184,6 +184,7 @@ nav h1{
     align-items: center;
     padding: 20px 10px;
     border-radius: 8px;
+
 }
 .factbox img{
     width: 80px;
@@ -203,7 +204,38 @@ nav h1{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    flex-wrap:wrap;
 }
+
+/* sponsor section start */
+.sponsor{
+    text-align: center;
+}
+.sponsor h3{
+    font-size: 40px;
+}
+
+.sponsor-pic{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.sponsor-pic> img{
+    width: 150px;
+    height: auto;
+}
+
+/* footer section */
+
+footer{
+    background-color: #FFF4E7;
+    padding: 25px 30px;
+    text-align: center;
+    margin-top: 200px;
+}
+
 /* responsiveness style */
 
 .hide{
@@ -241,6 +273,17 @@ nav h1{
     .content, .factboxes{
         flex-direction: column;
         gap: 50px;
+    }
+    .factbox{
+        width: 90%;
+    }
+    .sponsor-pic{
+        justify-content: center;
+    }
+    .sponsor-pic img{
+        border: 2px solid #FF900E;
+        border-radius: 8px;
+        padding: 50px 30px;
     }
 
 }
